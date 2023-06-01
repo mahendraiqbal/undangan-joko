@@ -39,6 +39,20 @@ salin1.onclick = () => {
     timer: 1000,
   });
 };
+
+const rek_male = document.getElementById("rek_male");
+const salin_male = document.getElementById("salin_male");
+
+salin_male.onclick = () => {
+  rek_male.select(); // Selects the text inside the input
+  document.execCommand("copy"); // Simply copies the selected text to clipboard
+  Swal.fire({
+    icon: "success",
+    title: "No. Rekening Berhasil di Salin",
+    showConfirmButton: false,
+    timer: 1000,
+  });
+};
 // copy end
 
 // waktu start
